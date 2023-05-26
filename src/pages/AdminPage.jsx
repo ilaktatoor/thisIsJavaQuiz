@@ -32,7 +32,7 @@ const onSelectFile = (event) => {
           <div className="inline-grid grid-cols-1 mt-3">
             {image ? <img src={URL.createObjectURL(image)} alt="image" className='h-60 w-64'/>
             :<img src={""} className='hidden'/>}
-            {image ? <button class="bg-mred hover:scale-105 hover:text-black duration-500 hover:bg-mgray drop-shadow-xl text-white border-solid border-2 border-black font-bold py-2 px-4 rounded-full mt-2" type="button"> Borrar </button>  :<img src={""} className='hidden'/>}
+            {image ? <button class="bg-mred hover:scale-105 hover:text-black duration-500 hover:bg-mgray drop-shadow-xl text-white border-solid border-2 border-black font-bold py-2 px-4 rounded-full mt-2" onClick={()=>setImage("")} type="button"> Borrar </button>  :<img src={""} className='hidden'/>}
             
             
           </div>
